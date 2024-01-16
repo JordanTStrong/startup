@@ -1,0 +1,2 @@
+The grid - a digital frontier. I tried to picture clusters of information 
+as they moved through the computer."

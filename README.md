@@ -14,3 +14,5 @@ care of it for you.
 Login feature. Users will be able to create accounts that will let them track their previous returns and status on current packages being returned.
 Schedule. Users will use this to schedule when they would like for a driver to pick up their returns (or even select pick up ASAP!).
 Previous items. Users will be able to see a clear history of every package they have ever returned with Strong Returns. 
+
+![Rough sketch of concept](startupSpec.jpg)

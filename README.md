@@ -16,3 +16,29 @@ Schedule. Users will use this to schedule when they would like for a driver to p
 Previous items. Users will be able to see a clear history of every package they have ever returned with Strong Returns. 
 
 ![Rough sketch of concept](startupSpec.jpg)
+
+
+**HTML** 
+- Basic structural and organizational elements
+
+**CSS** 
+- Styling and animating
+
+**JavaScript** 
+- Interactivity. Buttons to login, create account, select a date, box quantity, etc will all be accomplished via JS.
+
+**Web service** 
+- When a user schedules a pickup, the web service will process this information, update the database, and send a confirmation notification.
+
+**Authentication** 
+- Users will be able to create accounts and log in
+
+**Database persistence** 
+- Storing user data in a database. Users will be able to see what packages they have returned, which packages are in process of being returned, and overall number of packages returned.
+
+**WebSocket** 
+- Will update the user's dashboard in real time. For example, if the status of a package changes (like from 'scheduled for pickup' to 'in transit'), the dashboard will reflect this change immediately
+
+**Web framework** 
+- React will allow UI to be dynamic and responsive. Login forms, package scheduling, and user dashboards will be interactive and update in real-time
+

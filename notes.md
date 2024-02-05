@@ -18,3 +18,7 @@ Specifically, I learned:
 - Learned that I need to reference JS and CSS files from within the HTML file
 - Learned that I can reference files that do not currently exist
 - Learned that I can reference multiple HTML files to each other
+- Learned that I can affect font size/bold or not 
+- Learned that I can require data entry from a user to submit a form within HTML
+- Learned how to link an image
+- Learned how to create a button

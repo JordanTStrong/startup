@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Strongreturns</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to future CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="logo.png" alt="Strongreturns Logo"> <!-- Remember to update with logo -->
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="account-settings.html">Account Settings</a></li>
+                <li><a href="logout.php">Logout</a></li> <!-- Remember to update with JS -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Your Dashboard</h2>
+            <div id="welcome-message">
+                <h3>Welcome, [User Name]!</h3> <!-- User name is dynamic -->
+            </div>
+            
+            <div id="pickup-schedule">
+                <h3>Scheduled Pickups</h3>
+                <ul>
+                    <!-- List of scheduled pickups -->
+                    <!-- This data will be populated dynamically from the server -->
+                    <li>Pickup 1 - [Date]</li>
+                    <li>Pickup 2 - [Date]</li>
+                    <!-- ... more pickups ... -->
+                </ul>
+                <button onclick="window.location.href='schedule-pickup.html';">Schedule New Pickup</button>
+            </div>
+            
+            <div id="return-history">
+                <h3>Return History</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Number of Boxes</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- This table will be populated with data from the server -->
+                        <tr>
+                            <td>[Date]</td>
+                            <td>[Number of Boxes]</td>
+                            <td>[Status]</td>
+                        </tr>
+                        <!-- ... more history items ... -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Strongreturns. All Rights Reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Link to future JS file -->
+</body>
+</html>

@@ -42,3 +42,24 @@ Previous items. Users will be able to see a clear history of every package they 
 **Web framework** 
 - React will allow UI to be dynamic and responsive. Login forms, package scheduling, and user dashboards will be interactive and update in real-time
 
+# **STARTUP HTML**
+## HTML Pages: 
+- Created multiple HTML pages that allow users to navigate through the service, including a Homepage, Login/Signup, Dashboard, Schedule Pickup, Account Settings, and a Contact page.
+
+## Links: 
+- Incorporated navigational links throughout the application, ensuring users can easily move from logging in to accessing their personal dashboard, scheduling pickups, modifying account settings, and reaching out via the contact page.
+
+## Text: 
+- Each page contains textual descriptions and placeholders relevant to its function, such as instructions for scheduling a pickup, updating account details, or initiating contact.
+
+## Images: 
+- Used placeholder images, like a logo, which can be replaced with actual images pertinent to the application.
+
+## DB/Login: 
+- Included input fields for user authentication on the Login/Signup page and placeholders for dynamic content on the Dashboard page that will display database-pulled data, such as scheduled pickups and return history.
+
+## WebSocket: 
+- Although not explicitly shown in the HTML, placeholders were discussed for real-time data updates via WebSocket, to be implemented for showing live updates of package status on the user's Dashboard.
+
+
+

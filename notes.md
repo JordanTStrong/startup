@@ -22,3 +22,5 @@ Specifically, I learned:
 - Learned that I can require data entry from a user to submit a form within HTML
 - Learned how to link an image
 - Learned how to create a button
+- Learned that deployFiles.sh auto-populates the new HTML files. As in I don't need to replace the "startup" tag at the end of the command with any new file/page names. I assume that's handled dynamically by the deployFiles.sh script. Need to research further
+- 

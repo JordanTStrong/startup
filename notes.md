@@ -1,4 +1,4 @@
-# **GitHub assignment**
+# **GITHUB ASSIGNMENT**
 I learned some basics about GitHub. I will access the terminal through VSCode in the future.
 
 # **HTTPS**
@@ -10,3 +10,11 @@ I learned that the terminal is extremely powerful. Being able to make changes to
 Specifically, I learned:
 - How to undo a git commit
 - How to add pages to my website
+
+# **STARTUP**
+- Learned how to copy .sh file to my own repository
+- Learned how to structure an HTML page
+- Learned that index.html is normally the start/landing page label for html file
+- Learned that I need to reference JS and CSS files from within the HTML file
+- Learned that I can reference files that do not currently exist
+- Learned that I can reference multiple HTML files to each other

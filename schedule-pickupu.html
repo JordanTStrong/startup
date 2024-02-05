@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Pickup - Strongreturns</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to future CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="logo.png" alt="Strongreturns Logo"> <!-- Remember to put logo -->
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="logout.php">Logout</a></li> <!-- Link to future logout script using JS -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="schedule-pickup">
+            <h2>Schedule a Pickup</h2>
+            <form action="submit-pickup.php" method="post"> <!-- This will be done with JS -->
+                <div class="form-group">
+                    <label for="pickup-date">Pickup Date:</label>
+                    <input type="date" id="pickup-date" name="pickup_date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pickup-time">Pickup Time:</label>
+                    <input type="time" id="pickup-time" name="pickup_time" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="box-quantity">Number of Boxes:</label>
+                    <input type="number" id="box-quantity" name="box_quantity" min="1" required>
+                </div>
+                
+                <button type="submit">Confirm Pickup</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Strongreturns. All Rights Reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Link to future JS file -->
+</body>
+</html>

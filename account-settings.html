@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings - Strongreturns</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to future CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="logo.png" alt="Strongreturns Logo"> <!-- Path to eventual logo -->
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="logout.php">Logout</a></li> <!-- Link to the logout script using JS -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="account-settings">
+            <h2>Account Settings</h2>
+            <form action="update-account.php" method="post"> <!-- The JS will use this to update the info -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="current-password">Current Password:</label>
+                    <input type="password" id="current-password" name="current_password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" name="new_password">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-new-password">Confirm New Password:</label>
+                    <input type="password" id="confirm-new-password" name="confirm_new_password">
+                </div>
+
+                <button type="submit">Update Account</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Strongreturns. All Rights Reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Link to future JS file -->
+</body>
+</html>

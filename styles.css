@@ -65,4 +65,13 @@ body {
     background-color: #0056b3;
   }
   
+  /* How It Works Section */
+  #how-it-works {
+    padding: 50px 10%;
+  }
+  
+  #how-it-works article {
+    margin-bottom: 20px;
+  }
+  
   

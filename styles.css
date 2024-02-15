@@ -16,4 +16,10 @@ body {
     color: #0056b3;
   }
   
+  /* Header and Navigation */
+  header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+  }
+  
   

@@ -23,4 +23,10 @@ Specifically, I learned:
 - Learned how to link an image
 - Learned how to create a button
 - Learned that deployFiles.sh auto-populates the new HTML files. As in I don't need to replace the "startup" tag at the end of the command with any new file/page names. I assume that's handled dynamically by the deployFiles.sh script. Need to research further
-- 
+
+**SIMON-CSS**
+- Learned that referencing the css file is what gives it style
+- Learned that can reference multiple css files
+- Learned that I could break down very complex style requirements into multiple css files 
+- Learned how to add style to my HTML
+- Learned that there are technically ways to add style to HTML without having a separate css file, but that css is still best practice for my purposes

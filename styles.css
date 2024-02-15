@@ -7,4 +7,9 @@ body {
     box-sizing: border-box;
   }
   
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
   

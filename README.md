@@ -62,4 +62,12 @@ Previous items. Users will be able to see a clear history of every package they 
 - Although not explicitly shown in the HTML, placeholders were discussed for real-time data updates via WebSocket, to be implemented for showing live updates of package status on the user's Dashboard.
 
 
+## **STARTUP CSS** 
+- Styled the header, footer, and main content body to create a cohesive visual flow throughout the application.
+- Customized navigation elements, removing underlines for a cleaner look and updated the anchor colors for improved accessibility and modern aesthetics.
+- Ensured responsive design by implementing flexible layouts that adapt seamlessly across a variety of window sizes and devices.
+- Refined application elements using high-contrast colors and ample whitespace to ensure the content is easy to read and navigate.
+- Applied consistent font styling across all text content to maintain a uniform appearance.
+
+
 

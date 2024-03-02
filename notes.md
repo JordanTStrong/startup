@@ -44,6 +44,8 @@ Specifically, I learned:
 
   <img width="711" alt="Screenshot 2024-03-01 at 7 31 53 PM" src="https://github.com/JordanTStrong/startup/assets/85639308/b2144652-4934-4974-944c-a39edc7f418c">
 
+  - ITS ACTUALLY FISH AND RAT
+
   ![Screenshot 2024-03-01 at 7 32 59 PM](https://github.com/JordanTStrong/startup/assets/85639308/e029fe40-2677-4091-9b8c-92b14b36d051)
 
 

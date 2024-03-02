@@ -1,3 +1,4 @@
+
 # **GITHUB ASSIGNMENT**
 I learned some basics about GitHub. I will access the terminal through VSCode in the future.
 
@@ -30,3 +31,12 @@ Specifically, I learned:
 - Learned that I could break down very complex style requirements into multiple css files 
 - Learned how to add style to my HTML
 - Learned that there are technically ways to add style to HTML without having a separate css file, but that css is still best practice for my purposes
+
+# **MIDTERM**
+- I can use this CSS to load fonts from Google: @import url('https://stuffhere');
+- Style element always used to hold css inside of HTML doc. Style is a container
+- padding, CSS property, adds space around contents of selected elements
+
+- <img width="704" alt="Screenshot 2024-03-01 at 7 23 24 PM" src="https://github.com/JordanTStrong/startup/assets/85639308/2171bdb9-3dae-4d03-b2a5-82c0fb9cb406">
+
+- 

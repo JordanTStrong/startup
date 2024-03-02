@@ -48,4 +48,40 @@ Specifically, I learned:
 
   ![Screenshot 2024-03-01 at 7 32 59 PM](https://github.com/JordanTStrong/startup/assets/85639308/e029fe40-2677-4091-9b8c-92b14b36d051)
 
+  - document.querySelector('p') selects the first <p> element it finds in the document. It does not select all <p> elements. If you have multiple <p> elements in your document, this line of code will only attach the event listener to the very first one.
+    
+
+![Screenshot 2024-03-01 at 7 38 04 PM](https://github.com/JordanTStrong/startup/assets/85639308/bfe08e8b-f573-4cc7-94d9-0d6e35e4cd51)
+
+
+![Screenshot 2024-03-01 at 7 38 42 PM](https://github.com/JordanTStrong/startup/assets/85639308/687e25e7-fc70-4c6a-bb5c-de3d0d8a031d)
+
+
+![Screenshot 2024-03-01 at 7 39 11 PM](https://github.com/JordanTStrong/startup/assets/85639308/210615f1-2197-4ba2-a0bd-fa4d6e5d334e)
+
+
+![Screenshot 2024-03-01 at 7 39 41 PM](https://github.com/JordanTStrong/startup/assets/85639308/1a55f1eb-c25e-4564-a3f7-a98f534a441c)
+
+
+![Screenshot 2024-03-01 at 7 40 09 PM](https://github.com/JordanTStrong/startup/assets/85639308/34692988-9b83-4833-ade9-6b68ea420cf5)
+
+
+![Screenshot 2024-03-01 at 7 40 41 PM](https://github.com/JordanTStrong/startup/assets/85639308/abe4dd27-675d-4c15-8487-ee0bb224aecd)
+
+
+![Screenshot 2024-03-01 at 7 41 10 PM](https://github.com/JordanTStrong/startup/assets/85639308/0afb8c04-4aa1-4c09-badb-f0e23ce8f9b4)
+
+
+![Screenshot 2024-03-01 at 7 41 45 PM](https://github.com/JordanTStrong/startup/assets/85639308/b40edab7-e549-48cc-a5d0-f70504e7c019)
+
+
+![Screenshot 2024-03-01 at 7 42 30 PM](https://github.com/JordanTStrong/startup/assets/85639308/bd4a4a9e-b1ed-4929-8d5c-4ff901b56a9e)
+
+
+
+
+
+
+
+
 

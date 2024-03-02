@@ -36,7 +36,14 @@ Specifically, I learned:
 - I can use this CSS to load fonts from Google: @import url('https://stuffhere');
 - Style element always used to hold css inside of HTML doc. Style is a container
 - padding, CSS property, adds space around contents of selected elements
+  
+ <img width="704" alt="Screenshot 2024-03-01 at 7 23 24 PM" src="https://github.com/JordanTStrong/startup/assets/85639308/2171bdb9-3dae-4d03-b2a5-82c0fb9cb406">
 
-- <img width="704" alt="Screenshot 2024-03-01 at 7 23 24 PM" src="https://github.com/JordanTStrong/startup/assets/85639308/2171bdb9-3dae-4d03-b2a5-82c0fb9cb406">
+- div creates a division element
+- Order of CSS box model, outside going in: Margin, Border, Padding, Content
 
-- 
+  <img width="711" alt="Screenshot 2024-03-01 at 7 31 53 PM" src="https://github.com/JordanTStrong/startup/assets/85639308/b2144652-4934-4974-944c-a39edc7f418c">
+
+  ![Screenshot 2024-03-01 at 7 32 59 PM](https://github.com/JordanTStrong/startup/assets/85639308/e029fe40-2677-4091-9b8c-92b14b36d051)
+
+

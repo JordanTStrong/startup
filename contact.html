@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Strongreturns</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div id="logo">
-                <img src="logo.png" alt="Strongreturns Logo"> <!-- Path to your logo -->
+                <img src="logo.png" alt="Strongreturns Logo">
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="logout.php">Logout</a></li> <!-- Link to your logout script -->
+                <li><a href="#" id="logout-link">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -31,9 +31,9 @@
             </ul>
         </section>
 
-        <section id="contact-form">
+        <section id="contact-form-section">
             <h3>Send us a message</h3>
-            <form action="submit-contact.php" method="post"> <!-- Update action with your server-side script -->
+            <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -41,7 +41,7 @@
 
                 <div class="form-group">
                     <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="contact-email" name="email" required>
                 </div>
 
                 <div class="form-group">
@@ -59,6 +59,17 @@
         <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </footer>
 
-    <script src="scripts.js"></script> <!-- Link to your JS file -->
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Handle form submission
+            document.getElementById('contact-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Logic for handling contact form goes here
+                // For now, just a mock alert
+                alert('Thank you for your message. We will get back to you soon.');
+            });
+        });
+    </script>
 </body>
 </html>

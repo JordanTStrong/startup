@@ -31,3 +31,9 @@ Specifically, I learned:
 - Learned that I could break down very complex style requirements into multiple css files 
 - Learned how to add style to my HTML
 - Learned that there are technically ways to add style to HTML without having a separate css file, but that css is still best practice for my purposes
+
+**SIMON JAVASCRIPT**
+- Learned that JS can be debugged in the web browser
+- Learned that JS can be debugged in the terminal
+- Learned what a JS promise is
+- Learned the difference between JS promise object and async/await

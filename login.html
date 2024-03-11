@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strongreturns - Hassle-Free Amazon Returns</title>
+    <title>Login/Signup - Strongreturns</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,59 +14,60 @@
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="login.html" id="nav-login">Login</a></li>
-                <li><a href="dashboard.html" id="nav-dashboard">View My Dashboard</a></li>
-                <li><a href="signup.html" id="nav-signup">Sign Up</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <h1>Welcome to Strongreturns</h1>
-        <p>Effortless returns for your Amazon purchases. Schedule a pickup today and let us handle the rest.</p>
-        <button id="schedule-pickup-button">Schedule a Pickup</button>
-    </section>
+    <main>
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
 
-    <section id="how-it-works">
-        <h2>How It Works</h2>
-        <div>
-            <article>
-                <h3>Select Pickup Time</h3>
-                <p>Choose a convenient pickup time for you.</p>
-            </article>
-            <article>
-                <h3>Specify Box Quantity</h3>
-                <p>Let us know how many boxes you're returning.</p>
-            </article>
-            <article>
-                <h3>Attach Return Label</h3>
-                <p>Attach the provided Amazon return label to your boxes.</p>
-            </article>
-            <article>
-                <h3>Done!</h3>
-                <p>Our employee will pick up your packages and take care of the rest.</p>
-            </article>
-        </div>
-    </section>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="signup-section">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+
+                <label for="signup-password-confirm">Confirm Password:</label>
+                <input type="password" id="signup-password-confirm" name="password-confirm" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Strongreturns. All Rights Reserved.</p>
-        <p>Jordan Strong | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | 
-            <a href="https://github.com/JordanTStrong/startup" target="_blank">GitHub Repository</a>
-        </p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </footer>
 
     <script src="scripts.js"></script>
     <script>
-        document.getElementById('schedule-pickup-button').addEventListener('click', () => {
-            const user = JSON.parse(localStorage.getItem('user'));
-            if (user) {
-                redirectTo('schedule-pickup.html');
-            } else {
-                alert('Please log in to schedule a pickup.');
-                redirectTo('login.html');
-            }
+        document.addEventListener('DOMContentLoaded', () => {
+            // Handle Login Form Submission
+            document.getElementById('login-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = document.getElementById('login-email').value;
+                const password = document.getElementById('login-password').value;
+                handleLogin(email, password);
+            });
+
+            // Handle Signup Form Submission
+            // Add similar logic for the signup form...
         });
     </script>
 </body>

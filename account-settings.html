@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Settings - Strongreturns</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to future CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div id="logo">
-                <img src="logo.png" alt="Strongreturns Logo"> <!-- Path to eventual logo -->
+                <img src="logo.png" alt="Strongreturns Logo">
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="logout.php">Logout</a></li> <!-- Link to the logout script using JS -->
+                <li><a href="#" id="logout-link">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +23,7 @@
     <main>
         <section id="account-settings">
             <h2>Account Settings</h2>
-            <form action="update-account.php" method="post"> <!-- The JS will use this to update the info -->
+            <form id="account-settings-form">
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
@@ -54,6 +54,26 @@
         <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </footer>
 
-    <script src="scripts.js"></script> <!-- Link to future JS file -->
+    <script src="scripts.js"></script>
+    <script>
+        // Check if user is logged in
+        document.addEventListener('DOMContentLoaded', () => {
+            const user = getFromLocalStorage('user');
+            if (!user) {
+                alert('Please log in to access account settings.');
+                redirectTo('login.html');
+            }
+
+            // Populate form with user data (mock)
+            document.getElementById('email').value = user ? user.email : '';
+
+            // Handle form submission
+            document.getElementById('account-settings-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Add logic for handling account updates
+                alert('Account settings updated (mock).');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Strongreturns</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to future CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div id="logo">
-                <img src="logo.png" alt="Strongreturns Logo"> <!-- Remember to update with logo -->
+                <img src="logo.png" alt="Strongreturns Logo">
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="account-settings.html">Account Settings</a></li>
-                <li><a href="logout.php">Logout</a></li> <!-- Remember to update with JS -->
+                <li><a href="#" id="logout-link">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -24,17 +24,14 @@
         <section id="dashboard">
             <h2>Your Dashboard</h2>
             <div id="welcome-message">
-                <h3>Welcome, [User Name]!</h3> <!-- User name is dynamic -->
+                <!-- User name will be dynamically updated -->
+                <h3>Welcome, <span id="user-name">[User Name]</span>!</h3>
             </div>
             
             <div id="pickup-schedule">
                 <h3>Scheduled Pickups</h3>
-                <ul>
-                    <!-- List of scheduled pickups -->
-                    <!-- This data will be populated dynamically from the server -->
-                    <li>Pickup 1 - [Date]</li>
-                    <li>Pickup 2 - [Date]</li>
-                    <!-- ... more pickups ... -->
+                <ul id="scheduled-pickups">
+                    <!-- List of scheduled pickups will be dynamically populated -->
                 </ul>
                 <button onclick="window.location.href='schedule-pickup.html';">Schedule New Pickup</button>
             </div>
@@ -49,14 +46,8 @@
                             <th>Status</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <!-- This table will be populated with data from the server -->
-                        <tr>
-                            <td>[Date]</td>
-                            <td>[Number of Boxes]</td>
-                            <td>[Status]</td>
-                        </tr>
-                        <!-- ... more history items ... -->
+                    <tbody id="return-history-body">
+                        <!-- This table will be dynamically populated with data -->
                     </tbody>
                 </table>
             </div>
@@ -68,6 +59,42 @@
         <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </footer>
 
-    <script src="scripts.js"></script> <!-- Link to future JS file -->
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if user is logged in
+            const user = getFromLocalStorage('user');
+            if (!user) {
+                alert('Please log in to access the dashboard.');
+                redirectTo('login.html');
+            } else {
+                // Update user name
+                document.getElementById('user-name').textContent = user.email; // Assuming user's email is used as username
+
+                // Mock data for scheduled pickups and return history
+                const pickups = ['Pickup 1 - [Date]', 'Pickup 2 - [Date]']; // This should be replaced with real data
+                const history = [
+                    { date: '[Date]', boxes: '[Number]', status: '[Status]' },
+                    // ... more history items ...
+                ];
+
+                // Populate scheduled pickups
+                const pickupsList = document.getElementById('scheduled-pickups');
+                pickups.forEach(pickup => {
+                    const li = document.createElement('li');
+                    li.textContent = pickup;
+                    pickupsList.appendChild(li);
+                });
+
+                // Populate return history
+                const historyBody = document.getElementById('return-history-body');
+                history.forEach(item => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `<td>${item.date}</td><td>${item.boxes}</td><td>${item.status}</td>`;
+                    historyBody.appendChild(tr);
+                });
+            }
+        });
+    </script>
 </body>
 </html>

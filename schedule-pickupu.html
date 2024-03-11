@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule a Pickup - Strongreturns</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to future CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div id="logo">
-                <img src="logo.png" alt="Strongreturns Logo"> <!-- Remember to put logo -->
+                <img src="logo.png" alt="Strongreturns Logo">
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="logout.php">Logout</a></li> <!-- Link to future logout script using JS -->
+                <li><a href="#" id="logout-link">Logout</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="schedule-pickup">
+        <section id="schedule-pickup-section">
             <h2>Schedule a Pickup</h2>
-            <form action="submit-pickup.php" method="post"> <!-- This will be done with JS -->
+            <form id="schedule-pickup-form">
                 <div class="form-group">
                     <label for="pickup-date">Pickup Date:</label>
                     <input type="date" id="pickup-date" name="pickup_date" required>
@@ -49,6 +49,28 @@
         <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </footer>
 
-    <script src="scripts.js"></script> <!-- Link to future JS file -->
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if user is logged in
+            const user = getFromLocalStorage('user');
+            if (!user) {
+                alert('Please log in to schedule a pickup.');
+                redirectTo('login.html');
+            }
+
+            // Handle Pickup Schedule Form Submission
+            document.getElementById('schedule-pickup-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const pickupDate = document.getElementById('pickup-date').value;
+                const pickupTime = document.getElementById('pickup-time').value;
+                const boxQuantity = document.getElementById('box-quantity').value;
+
+                // Logic to handle pickup scheduling goes here
+                // For now, just a mock confirmation
+                alert(`Pickup scheduled on ${pickupDate} at ${pickupTime} for ${boxQuantity} boxes.`);
+            });
+        });
+    </script>
 </body>
 </html>
